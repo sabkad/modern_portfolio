@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -117,12 +117,13 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: #fff;
+        color: set-text-color($primary-color);
         text-decoration: none;
         @include easeOut;
 
         &:hover {
-            color: $secondary-color;
+            color: rgba($color: #57e63b, $alpha: 1.0);
+            transform: scale(1.2);
         } 
     }
 }
