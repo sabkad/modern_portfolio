@@ -14,6 +14,7 @@ $background-opacity: 0.9;
             background: $home-image;
             background-attachment: fixed;
             background-size: cover;
+            overflow: hidden;
         
             &::after {
                 content: '';
@@ -26,5 +27,31 @@ $background-opacity: 0.9;
                 z-index: -1;
             }
         }
+    }
+}
+
+
+// Media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1770px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
     }
 }
