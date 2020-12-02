@@ -193,6 +193,27 @@ main {
       opacity: 0.5;
       border-color: #eece1a;
       transition: all 0.5s ease-out; }
+  .projects i.fa-github {
+    margin-right: 0.4rem; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px solid #fff;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease-out; }
+    .boxes div:hover {
+      background: #eece1a;
+      padding: 0.5rem 1.5rem;
+      color: #000; }
+      .boxes div:hover span {
+        color: #000; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -224,7 +245,7 @@ main {
 
 @media screen and (min-width: 769px) and (max-width: 1770px) {
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main {
@@ -261,18 +282,16 @@ main {
 @media screen and (max-width: 500px) {
   main {
     padding: 3rem 2rem; }
+    main .lg-heading {
+      font-size: 4rem; }
   main#home h1 {
     margin-top: 10vh; }
   #about {
     text-align: center;
     align-items: center;
     overflow: hidden; }
-    #about .lg-heading {
-      font-size: 5rem; }
     #about .bio > p {
       font-size: 1.2rem; }
-  #work .lg-heading {
-    font-size: 4rem; }
   #work .projects {
     grid-template-columns: 1fr; } }
 

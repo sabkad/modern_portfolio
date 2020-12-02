@@ -8,7 +8,7 @@
 //Desctops & Laptops
 @include mediaLg {
     .projects {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -71,6 +71,10 @@
 @include mediaSm {
     main {
         padding: 3rem 2rem;
+
+        .lg-heading {
+            font-size: 4rem;
+        }
     }
 
     main#home h1 {
@@ -82,20 +86,12 @@
         align-items: center;
         overflow: hidden;
 
-        .lg-heading {
-            font-size: 5rem;
-        }
-
         .bio > p {
             font-size: 1.2rem;
         }
     }
     
     #work {
-        .lg-heading {
-            font-size: 4rem;
-        }
-
         .projects {
             grid-template-columns: 1fr;
         }
